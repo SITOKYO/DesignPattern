@@ -10,6 +10,6 @@ package Mediator;
  * @author kinopp
  */
 public interface Mediator {
-    public void createColleagues(Colleague colleague);
+    public void addColleagues(Colleague colleague);
     public void colleagueChanged();
 }

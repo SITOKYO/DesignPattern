@@ -11,7 +11,10 @@ package Builder;
  */
 public class Client {
     public static void main(String... args) throws Exception{
-        Director director = new Director("ConcreteBuilder");
-        director.constract();
+        Director director01 = new Director("ConcreteBuilder01");
+        director01.constract();
+        
+        Director director02 = new Director("ConcreteBuilder02");
+        director02.constract();
     }
 }

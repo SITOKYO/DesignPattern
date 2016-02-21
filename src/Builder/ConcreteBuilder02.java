@@ -9,21 +9,21 @@ package Builder;
  *
  * @author kinopp
  */
-public class ConcreteBuilder implements Builder{
-
+public class ConcreteBuilder02 implements Builder{
+    
     @Override
     public void buiderPart1() {
-        System.out.println("builderPart1です");
+        System.out.println("02のbuilderPart1です");
     }
 
     @Override
     public void buiderPart2() {
-        System.out.println("builderPart2です");
+        System.out.println("02のbuilderPart2です");
     }
 
     @Override
     public void buiderPart3() {
-        System.out.println("builderPart3です");
+        System.out.println("02のbuilderPart3です");
     }
     
 }

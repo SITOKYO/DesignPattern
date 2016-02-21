@@ -25,10 +25,10 @@ public class Client {
         colleague21.setStatus("使用済");
         colleague31.setStatus("使用済");
         
-        mediator1.createColleagues(colleague11);
-        mediator1.createColleagues(colleague12);
-        mediator1.createColleagues(colleague21);
-        mediator1.createColleagues(colleague31);
+        mediator1.addColleagues(colleague11);
+        mediator1.addColleagues(colleague12);
+        mediator1.addColleagues(colleague21);
+        mediator1.addColleagues(colleague31);
         
         mediator1.colleagueChanged();
         
@@ -40,10 +40,10 @@ public class Client {
         colleague21.setStatus("使用済");
         colleague31.setStatus("使用済");
         
-        mediator2.createColleagues(colleague11);
-        mediator2.createColleagues(colleague12);
-        mediator2.createColleagues(colleague21);
-        mediator2.createColleagues(colleague31);
+        mediator2.addColleagues(colleague11);
+        mediator2.addColleagues(colleague12);
+        mediator2.addColleagues(colleague21);
+        mediator2.addColleagues(colleague31);
         
         mediator2.colleagueChanged();
     }

@@ -17,7 +17,7 @@ public class ConcreteMediator implements Mediator{
     private List<Colleague> colleagueList = new ArrayList();
     
     @Override
-    public void createColleagues(Colleague colleague) {
+    public void addColleagues(Colleague colleague) {
         colleagueList.add(colleague);
     }
 
@@ -36,6 +36,7 @@ public class ConcreteMediator implements Mediator{
         } else {               //「未使用」がある場合
             message = "まだ使えます";
         }
+        // Colleagueへメッセージを渡す
         for(Colleague colleague : colleagueList){
             colleague.controlColleague(message);
         }
