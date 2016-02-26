@@ -19,5 +19,12 @@ public abstract class Subject {
         observers.add(observer);
     }
     
-    public abstract String getSubjectStatus();
+    public void notifyObservers(){
+        getSubjectStatus();
+        for(Observer observer : observers){
+            observer.update();
+        }
+    }
+    
+    public abstract void getSubjectStatus();
 }

@@ -9,11 +9,9 @@ package Observer;
  *
  * @author kinopp
  */
-public class ConcreteObserver implements Observer{
-
+public class ConcreteObserver2 implements Observer{
     @Override
     public void update() {
-        System.out.println("Subjectの変更通知を受けました");
+        System.out.println("ConcreteObserver2はSubjectの変更通知を受けました");
     }
-    
 }

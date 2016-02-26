@@ -12,12 +12,11 @@ package Observer;
 public class Client {
     public static void main(String... aegs){
         Subject subject = new ConcreteSubject();
-        Observer observer = new ConcreteObserver();
+        Observer observer1 = new ConcreteObserver1();
+        Observer observer2 = new ConcreteObserver2();
         
-        subject.addObserver(observer);
-        if (subject.getSubjectStatus().equals("変更が発生しました")){
-            observer.update();
-        }
-    
+        subject.addObserver(observer1);
+        subject.addObserver(observer2);
+        subject.notifyObservers();
     }
 }
