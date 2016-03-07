@@ -9,7 +9,7 @@ package Composite;
  *
  * @author kinopp
  */
-public class Leaf extends Composite{
+public class Leaf extends Component{
 
     private String name;
     
