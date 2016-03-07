@@ -15,7 +15,6 @@ public class Leaf extends Component{
 
     @Override
     public void accept(Visitor visitor) {
-        //System.out.println("Leafがvisitorを受け入れました");
         visitor.visit(this);
     }
 }
