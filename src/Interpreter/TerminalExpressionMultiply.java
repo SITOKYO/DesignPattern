@@ -5,10 +5,15 @@
  */
 package Interpreter;
 
+import java.util.Stack;
+
 /**
  *
  * @author kinopp
  */
-public abstract class AbstractExpression {
-    public abstract int Interpret(Context context);
+public class TerminalExpressionMultiply implements Expression {
+    @Override
+    public void interpret(Stack<Integer> stack) {
+        stack.push( stack.pop() * stack.pop() ); 
+    }
 }
