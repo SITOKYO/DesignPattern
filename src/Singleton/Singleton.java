@@ -5,9 +5,9 @@ package Singleton;
  */
 public class Singleton {
 
-    private static final Singleton singleton = new Singleton();
+    private static final Singleton SINGLETON = new Singleton();
 
-    // コンストラクタをprivateにすることでnewを禁止する。
+    // コンストラクタをprivateにすることでインスタンス化および継承を禁止する。
     private Singleton() {                                 
     }
 
@@ -15,9 +15,10 @@ public class Singleton {
      * インスタンス取得メソッド
      * @return 当クラスのインスタンス
      */
-    public static Singleton getInstance() {
+    public static synchronized Singleton getInstance() {
         // このメソッドを通してのみインスタンスを取得できる。
         // staticなインスタンスなのでどこから呼ばれても常に同じオブジェクトを渡す。
-        return singleton;
+        // 同時実行を考慮し、synchronizedとする
+        return SINGLETON;
     }
 }

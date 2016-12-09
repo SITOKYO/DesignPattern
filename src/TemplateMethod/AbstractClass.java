@@ -10,6 +10,11 @@ package TemplateMethod;
  * @author kinopp
  */
 public abstract class AbstractClass {
+
+    // 具体的な処理はサブクラスに記載
+    protected abstract void method1();
+    protected abstract void method2();
+    protected abstract void method3();
     
     // 抽象メソッドを利用して処理内容を記載
     public void templateMethod(){
@@ -21,10 +26,4 @@ public abstract class AbstractClass {
         method3();   // 具体的な処理はわからないが、method3を行う
         System.out.println("-----  end  -----");
     }
-    
-    // 具体的な処理はサブクラスに記載
-    protected abstract void method1();
-    protected abstract void method2();
-    protected abstract void method3();
-    
 }
