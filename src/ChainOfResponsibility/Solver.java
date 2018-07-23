@@ -1,7 +1,7 @@
 package ChainOfResponsibility;
 
 public abstract class Solver {
-    private String solverName;
+    private final String solverName;
     private Solver nextSolver;
   
     public Solver(String solverName){
