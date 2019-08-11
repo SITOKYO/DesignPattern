@@ -2,7 +2,7 @@ package Visitor;
 
 public class Leaf extends Component{
 
-    private String name;
+    private final String name;
     
     public Leaf(String name) {
         this.name = name;

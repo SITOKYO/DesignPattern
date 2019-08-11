@@ -6,13 +6,14 @@ import java.util.List;
 
 public class Composite extends Component{
 
-    private String name;
-    private List<Component> components = new ArrayList<>();
+    private final String name;
+    private final List<Component> components = new ArrayList<>();
 
     public Composite(String name) {
         this.name = name;
     }
     
+    @Override
     public Iterator iterator() {
         return components.iterator();
     }
